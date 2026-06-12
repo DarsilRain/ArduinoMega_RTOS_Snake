@@ -1,0 +1,3 @@
+[submodule "LCD-KeyPad-Shield"]
+	path = LCD-KeyPad-Shield
+	url = https://github.com/DFRobot/LCD-KeyPad-Shield.git
