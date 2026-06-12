@@ -1,0 +1,28 @@
+# ignore mac files
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+
+#ignore python precompiled
+__pycache__
+*/__pycache__
+**/__pycache__
+
+#ignore changes in generated data
+/HW1_TryTwo/test_set.csv
+
+#ignore Jupyter checkpoint files
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ignore giant dataset in homework 4
+HW4/collect_submission.ipynb
+HW4/cs231n/
+HW4/features.ipynb
+HW4/FullyConnectedNets.ipynb
+HW4/knn.ipynb
+HW4/makepdf.py
+HW4/softmax.ipynb
+HW4/collect_submission.ipynb
+HW4/collectSubmission.sh
+HW4/two_layer_net.ipynb
