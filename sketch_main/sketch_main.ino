@@ -6,6 +6,7 @@
 //******************************************************************************
 
 #include <Arduino_FreeRTOS.h>
+#include "my_lcd_2.h"
 
 // blink LED task
 void toggleLED(void *parameter) 
@@ -32,6 +33,16 @@ void setup() {
   xTaskCreate(
     toggleLED, //function to call
     "ToggleLED", // name of task
+    128, // stack size (in words)
+    NULL, // parameter to pass to function
+    1, // task priority (higher num means higher priority)
+    NULL // task handle
+  );
+
+  // RTOS task
+  xTaskCreate(
+    drive_lcd, //function to call
+    "drive lcd", // name of task
     128, // stack size (in words)
     NULL, // parameter to pass to function
     1, // task priority (higher num means higher priority)
